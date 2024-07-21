@@ -1,0 +1,22 @@
+import tkinter as tk
+
+# Funções de exemplo
+def kill_player():
+    print("Função Kill Player ativada.")
+
+def bring_player():
+    print("Função Bring Player ativada.")
+
+# Criação da janela principal
+root = tk.Tk()
+root.title("GUI de Exemplo")
+
+# Botões para as funções
+btn_kill = tk.Button(root, text="Kill Player", command=kill_player)
+btn_kill.pack(pady=10)
+
+btn_bring = tk.Button(root, text="Bring Player", command=bring_player)
+btn_bring.pack(pady=10)
+
+# Execução da interface gráfica
+root.mainloop()
