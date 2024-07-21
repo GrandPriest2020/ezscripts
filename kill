@@ -1,0 +1,10 @@
+local Players = game:GetService("Players")
+
+function killPlayer(playerName)
+    local player = Players:FindFirstChild(playerName)
+    if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+        player.Character.Humanoid.Health = 0
+    end
+end
+
+killPlayer("NomeDoJogador")
